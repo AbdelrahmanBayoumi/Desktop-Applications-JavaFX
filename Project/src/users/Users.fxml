@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="690.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="users.UsersController">
+   <children>
+      <Pane prefHeight="152.0" prefWidth="690.0" style="-fx-background-color: #1e2b3c;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="116.0" fitWidth="312.0" layoutX="218.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo0.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fx:id="key_pic_Login_Btn" fitHeight="36.0" fitWidth="42.0" layoutX="286.0" layoutY="517.0" onMouseClicked="#NewUserAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/key.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="22.0" layoutY="154.0" prefHeight="463.0" prefWidth="647.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="238.0" prefWidth="666.0" spacing="20.0">
+               <children>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#AddUser" prefHeight="171.0" prefWidth="206.0" style="-fx-background-color: #95ccff; -fx-border-width: 3; -fx-border-color: #fff;" text="Add User">
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/AddUser.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#DeleteUser" prefHeight="171.0" prefWidth="206.0" style="-fx-background-color: #95ccff; -fx-border-width: 3; -fx-border-color: #fff;" text="Delete User">
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/DeleteUser.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="238.0" prefWidth="666.0" spacing="20.0">
+               <children>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#ViewUsers" prefHeight="171.0" prefWidth="206.0" style="-fx-background-color: #95ccff; -fx-border-width: 3; -fx-border-color: #fff;" text="View All Users">
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ViewUsers.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.ToggleButtonGroup?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="968.0" prefWidth="1335.0" style="-fx-background-color: #F2F2F2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="checkin.CheckInController">
+   <children>
+      <Pane layoutX="-3.0" layoutY="143.0" style="-fx-background-color: #95ccff; -fx-border-width: 10; -fx-border-color: #1e2b3c;">
+         <children>
+            <VBox layoutX="18.0" layoutY="75.0" prefHeight="671.0" prefWidth="258.0" spacing="30.0">
+               <children>
+                  <JFXButton onAction="#goTO_check_in" prefHeight="83.0" prefWidth="254.0" style="-fx-background-color: #1e2b3c;" text="Check in" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton onAction="#goTO_check_out" prefHeight="83.0" prefWidth="254.0" style="-fx-background-color: #B2E0FF;" text="Check Out" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton onAction="#goTo_room_booking" prefHeight="83.0" prefWidth="254.0" style="-fx-background-color: #B2E0FF;" text="Room Booking" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton onAction="#goTo_cancel_booking" prefHeight="83.0" prefWidth="254.0" style="-fx-background-color: #B2E0FF;" text="Cancel Booking" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="29.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="roomBTN" onAction="#goto_Rooms" prefHeight="83.0" prefWidth="254.0" style="-fx-background-color: #B2E0FF;" text="Rooms" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="guestsBTN" onAction="#goTo_guests" prefHeight="83.0" prefWidth="254.0" style="-fx-background-color: #B2E0FF;" text="Guests" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <Pane layoutX="21.0" layoutY="752.0" prefHeight="53.0" prefWidth="254.0">
+               <children>
+                  <FontAwesomeIconView fill="#1e2b3c" glyphName="CHEVRON_LEFT" layoutY="46.0" onDragDetected="#goToHomePage" onMouseClicked="#goToHomePage" size="15" underline="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FontAwesomeIconView>
+                  <Label fx:id="backLabel" layoutX="15.0" layoutY="17.0" onMouseClicked="#goToHomePage" text="Back" textFill="#1e2b3c" underline="true">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane prefHeight="175.0" prefWidth="1400.0" style="-fx-background-color: #1e2b3c;">
+         <children>
+            <JFXButton fx:id="Logobtn" layoutX="21.0" layoutY="8.0" onAction="#goToHomePage" prefHeight="143.0" prefWidth="339.0" style="-fx-cursor: hand;">
+               <graphic>
+                  <ImageView fitHeight="146.0" fitWidth="348.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                     <image>
+                        <Image url="@../img/logo0.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#95ccff" height="100.0" layoutX="499.0" layoutY="111.0" stroke="#1e2b3c" strokeType="OUTSIDE" strokeWidth="5.0" width="413.0" />
+            <Label layoutX="602.0" layoutY="103.0" text="Check In" textAlignment="CENTER">
+               <font>
+                  <Font name="Harlow Solid Italic" size="57.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="83.0" fitWidth="59.0" layoutX="1134.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/user.png" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER" layoutX="1196.0" layoutY="40.0" prefHeight="96.0" prefWidth="165.0">
+               <children>
+                  <Label fx:id="usernameLabel" alignment="CENTER" text="Abdelrahman" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink fx:id="logoutLink" onAction="#logout" text="Log Out" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </VBox>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Pane layoutX="323.0" layoutY="241.0" prefHeight="628.0" prefWidth="507.0" scaleZ="11.0" style="-fx-border-width: 5; -fx-background-color: #fff; -fx-border-color: #1e2b3c;">
+         <children>
+            <GridPane hgap="5.0" layoutX="11.0" layoutY="50.0" prefHeight="564.0" prefWidth="485.0" vgap="5.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="248.33331298828125" minWidth="10.0" prefWidth="144.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="321.6666564941406" minWidth="10.0" prefWidth="316.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Name" GridPane.valignment="TOP">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label text="Phone" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label text="Email" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label text="Address" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label text="City" GridPane.rowIndex="4" GridPane.valignment="TOP">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label text="Nationality" GridPane.rowIndex="5" GridPane.valignment="TOP">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label text="Passport No" GridPane.rowIndex="6" GridPane.valignment="TOP">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Pane GridPane.columnIndex="1" GridPane.valignment="TOP">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <children>
+                        <JFXTextField fx:id="NameField" focusColor="#1e2b3c" onAction="#Handle_NameField" onKeyPressed="#Handle_NameField" prefHeight="42.0" prefWidth="316.0" promptText="First and Last name" style="-fx-border-color: #BCBBBB; -fx-background-color: #fff; -fx-prompt-text-fill: gray;" unFocusColor="#ffffff00">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <effect>
+                              <DropShadow height="5.0" radius="2.0" width="5.0" />
+                           </effect>
+                        </JFXTextField>
+                        <Label fx:id="name_error" layoutX="5.0" layoutY="45.0" prefHeight="25.0" prefWidth="309.0" textFill="RED" />
+                     </children>
+                  </Pane>
+                  <Pane GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <children>
+                        <JFXTextField fx:id="PhoneField" focusColor="#1e2b3c" onKeyPressed="#Handle_PhoneField" prefHeight="42.0" prefWidth="316.0" promptText="Phone Number" style="-fx-border-color: #BCBBBB; -fx-background-color: #fff; -fx-prompt-text-fill: gray;" unFocusColor="#ffffff00">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <effect>
+                              <DropShadow height="5.0" radius="2.0" width="5.0" />
+                           </effect>
+                        </JFXTextField>
+                        <Label fx:id="phone_error" layoutX="5.0" layoutY="45.0" prefHeight="25.0" prefWidth="309.0" textFill="RED" />
+                     </children>
+                  </Pane>
+                  <Pane GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                     <children>
+                        <JFXTextField fx:id="EmailField" focusColor="#1e2b3c" onInputMethodTextChanged="#Handle_EmailField" onKeyPressed="#Handle_EmailField" prefHeight="42.0" prefWidth="316.0" promptText="Email" style="-fx-border-color: #BCBBBB; -fx-background-color: #fff; -fx-prompt-text-fill: gray;" unFocusColor="#ffffff00">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <effect>
+                              <DropShadow height="5.0" radius="2.0" width="5.0" />
+                           </effect>
+                        </JFXTextField>
+                        <Label fx:id="email_error" layoutX="5.0" layoutY="45.0" prefHeight="25.0" prefWidth="309.0" textFill="RED" />
+                     </children>
+                  </Pane>
+                  <Pane GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                     <children>
+                        <JFXTextField fx:id="AddressField" focusColor="#1e2b3c" prefHeight="42.0" prefWidth="316.0" promptText="Address" style="-fx-border-color: #BCBBBB; -fx-background-color: #fff; -fx-prompt-text-fill: gray;" unFocusColor="#ffffff00">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <effect>
+                              <DropShadow height="5.0" radius="2.0" width="5.0" />
+                           </effect>
+                        </JFXTextField>
+                        <Label fx:id="address_error" layoutX="5.0" layoutY="45.0" prefHeight="25.0" prefWidth="309.0" textFill="RED" />
+                     </children>
+                  </Pane>
+                  <Pane GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.valignment="TOP">
+                     <children>
+                        <JFXTextField fx:id="CityField" focusColor="#1e2b3c" prefHeight="42.0" prefWidth="316.0" promptText="New York" style="-fx-border-color: #BCBBBB; -fx-background-color: #fff; -fx-prompt-text-fill: gray;" unFocusColor="#ffffff00">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <effect>
+                              <DropShadow height="5.0" radius="2.0" width="5.0" />
+                           </effect>
+                        </JFXTextField>
+                        <Label fx:id="city_error" layoutX="5.0" layoutY="45.0" prefHeight="25.0" prefWidth="309.0" textFill="RED" />
+                     </children>
+                  </Pane>
+                  <Pane GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.valignment="TOP">
+                     <children>
+                        <JFXTextField fx:id="NationalityField" focusColor="#1e2b3c" prefHeight="42.0" prefWidth="316.0" promptText="American" style="-fx-border-color: #BCBBBB; -fx-background-color: #fff; -fx-prompt-text-fill: gray;" unFocusColor="#ffffff00">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <effect>
+                              <DropShadow height="5.0" radius="2.0" width="5.0" />
+                           </effect>
+                        </JFXTextField>
+                        <Label fx:id="nationality_error" layoutX="5.0" layoutY="45.0" prefHeight="25.0" prefWidth="309.0" textFill="RED" />
+                     </children>
+                  </Pane>
+                  <Pane GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.valignment="TOP">
+                     <children>
+                        <JFXTextField fx:id="PassportField" focusColor="#1e2b3c" prefHeight="42.0" prefWidth="316.0" promptText="12321-1231232123-4" style="-fx-border-color: #BCBBBB; -fx-background-color: #fff; -fx-prompt-text-fill: gray;" unFocusColor="#ffffff00">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <effect>
+                              <DropShadow height="5.0" radius="2.0" width="5.0" />
+                           </effect>
+                        </JFXTextField>
+                        <Label fx:id="passport_error" layoutX="5.0" layoutY="45.0" prefHeight="25.0" prefWidth="309.0" textFill="RED" />
+                     </children>
+                  </Pane>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </GridPane>
+         </children></Pane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="477.0" layoutY="229.0" stroke="#1e2b3c" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+      <Label layoutX="510.0" layoutY="237.0" text="Personal Data" textFill="#1e2b3c">
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+      </Label>
+      <Pane layoutX="855.0" layoutY="241.0" prefHeight="256.0" prefWidth="507.0" style="-fx-border-width: 5; -fx-background-color: #fff; -fx-border-color: #1e2b3c;">
+         <children>
+            <Label layoutX="27.0" layoutY="37.0" text="Credit Card Information :">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="256.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/credit-card.png" />
+               </image>
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </ImageView>
+            <GridPane layoutX="27.0" layoutY="92.0" prefHeight="144.0" prefWidth="454.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="216.0" minWidth="10.0" prefWidth="159.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="284.0" minWidth="10.0" prefWidth="284.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="81.0" minHeight="10.0" prefHeight="81.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="87.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Card Number" GridPane.valignment="TOP">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label text="CVC code" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="CardNumField" focusColor="#1e2b3c" prefHeight="42.0" prefWidth="316.0" promptText="Card Number" style="-fx-border-color: #BCBBBB; -fx-background-color: #fff; -fx-prompt-text-fill: gray;" unFocusColor="#ffffff00" GridPane.columnIndex="1" GridPane.valignment="TOP">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <effect>
+                        <InnerShadow color="#0000002c" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="CVCcodeField" focusColor="#1e2b3c" prefHeight="42.0" prefWidth="316.0" promptText="CVC Code" style="-fx-border-color: #BCBBBB; -fx-background-color: #fff; -fx-prompt-text-fill: gray;" unFocusColor="#ffffff00" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <effect>
+                        <InnerShadow color="#0000002c" />
+                     </effect>
+                  </JFXTextField>
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="1009.0" layoutY="229.0" stroke="#1e2b3c" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+      <Label layoutX="1069.0" layoutY="237.0" text="Payment" textFill="#1e2b3c">
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="submitButton" buttonType="RAISED" layoutX="1228.0" layoutY="885.0" onAction="#submitAction" prefHeight="55.0" prefWidth="134.0" ripplerFill="#1e2b3c" style="-fx-background-color: #009027;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="clearButton" buttonType="RAISED" layoutX="1075.0" layoutY="885.0" onAction="#clearButtonAction" prefHeight="55.0" prefWidth="134.0" ripplerFill="#1e2b3c" style="-fx-background-color: #8D8D8D;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <Pane layoutX="856.0" layoutY="522.0" prefHeight="347.0" prefWidth="507.0" style="-fx-border-width: 5; -fx-background-color: #fff; -fx-border-color: #1e2b3c;">
+         <children>
+            <GridPane layoutX="24.0" layoutY="54.0" prefHeight="190.0" prefWidth="460.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="223.3333740234375" minWidth="10.0" prefWidth="174.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="365.99993896484375" minWidth="10.0" prefWidth="286.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="Room Type">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="64.0" prefWidth="289.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <children>
+                        <ToggleButtonGroup selectionType="SINGLE">
+                           <toggles>
+                              <RadioButton fx:id="economyType" mnemonicParsing="false" selected="true" text="Economy">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="roomtype" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton fx:id="normalType" mnemonicParsing="false" text="Normal" toggleGroup="$roomtype">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="vipType" mnemonicParsing="false" text="VIP" toggleGroup="$roomtype">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </RadioButton>
+                           </toggles>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </ToggleButtonGroup>
+                     </children>
+                  </HBox>
+                  <Label text="Room Capacity" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="64.0" prefWidth="289.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <ToggleButtonGroup selectionType="SINGLE">
+                           <toggles>
+                              <RadioButton fx:id="singleCapacity" mnemonicParsing="false" selected="true" text="Single">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="roomCapacity" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton fx:id="doubleCapacity" mnemonicParsing="false" text="Double" toggleGroup="$roomCapacity">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="tripleCapacity" mnemonicParsing="false" text="Triple" toggleGroup="$roomCapacity">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </RadioButton>
+                           </toggles>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </ToggleButtonGroup>
+                     </children>
+                  </HBox>
+                  <JFXDatePicker fx:id="CheckInDatePicker" defaultColor="#008cff" editable="false" promptText="mm/dd/yyyy" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                  <Label text="Check in date" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label text="Check out date" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <JFXDatePicker fx:id="CheckoutDatePicker" defaultColor="#008cff" promptText="mm/dd/yyyy" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+               </children>
+            </GridPane>
+            <JFXButton fx:id="searchRoomButtton" layoutX="389.0" layoutY="279.0" onAction="#searchRoom" prefHeight="44.0" prefWidth="95.0" ripplerFill="#1e2b3c" style="-fx-background-color: #95ccff;" text="Search" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="24.0" layoutY="279.0" text="Room ID :">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="roomIDField" editable="false" layoutX="149.0" layoutY="275.0" prefHeight="40.0" prefWidth="108.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></JFXTextField>
+         </children>
+      </Pane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="1009.0" layoutY="507.0" stroke="#1e2b3c" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+      <Label layoutX="1056.0" layoutY="515.0" text="Room Data" textFill="#1e2b3c">
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

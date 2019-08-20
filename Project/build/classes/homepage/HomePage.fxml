@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="956.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="homepage.HomePageController">
+   <children>
+      <Pane layoutY="174.0" prefHeight="781.0" prefWidth="233.0" style="-fx-background-color: #95ccff; -fx-border-width: 2; -fx-border-color: #1e2b3c;">
+         <children>
+            <VBox layoutX="12.0" layoutY="18.0" prefHeight="641.0" prefWidth="211.0" spacing="50.0">
+               <children>
+                  <GridPane prefHeight="128.0" prefWidth="239.0" style="-fx-background-color: #B2E0FF; -fx-border-width: 3; -fx-border-color: #1e2b3c;">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="132.0" minWidth="10.0" prefWidth="81.66667175292969" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="190.0" minWidth="10.0" prefWidth="132.3333282470703" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="usernameLabel11" alignment="CENTER" text="Name:" textAlignment="CENTER" textFill="#1e2b3c">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="usernameLabel1" alignment="CENTER" text="Abdelrahman" textAlignment="CENTER" textFill="#1e2b3c" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Comic Sans MS" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="usernameLabel111" alignment="CENTER" text="Rank:" textAlignment="CENTER" textFill="#1e2b3c" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="rank_Label" alignment="CENTER" text="Admin" textAlignment="CENTER" textFill="#1e2b3c" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Comic Sans MS" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </GridPane>
+                  <Pane prefHeight="200.0" prefWidth="274.0" style="-fx-background-color: #B2E0FF; -fx-border-width: 3; -fx-border-color: #1e2b3c;">
+                     <children>
+                        <ProgressIndicator fx:id="available_par" layoutX="18.0" layoutY="23.0" prefHeight="128.0" prefWidth="185.0" progress="0.78">
+                           <effect>
+                              <DropShadow color="WHITE" height="30.33" radius="16.22" width="36.55" />
+                           </effect>
+                        </ProgressIndicator>
+                        <Label alignment="CENTER" layoutX="29.0" layoutY="168.0" prefHeight="36.0" prefWidth="158.0" style="-fx-background-color: #B2E0FF; -fx-border-width: 2; -fx-border-color: #1e2b3c;" text="Available Rooms" textAlignment="CENTER" textFill="#1e2b3c">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="274.0" style="-fx-background-color: #B2E0FF; -fx-border-width: 3; -fx-border-color: #1e2b3c;">
+                     <children>
+                        <ProgressIndicator fx:id="reserved_par" layoutX="18.0" layoutY="21.0" prefHeight="128.0" prefWidth="185.0" progress="0.22">
+                           <effect>
+                              <DropShadow color="WHITE" height="30.33" radius="16.22" width="36.55" />
+                           </effect>
+                        </ProgressIndicator>
+                        <Label alignment="CENTER" layoutX="30.0" layoutY="171.0" prefHeight="36.0" prefWidth="158.0" style="-fx-background-color: #B2E0FF; -fx-border-width: 2; -fx-border-color: #1e2b3c;" text="Reserved Rooms" textAlignment="CENTER" textFill="#1e2b3c">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" top="20.0" />
+               </padding>
+            </VBox>
+            <JFXButton layoutX="16.0" layoutY="687.0" onAction="#logout" prefHeight="61.0" prefWidth="203.0" text="Log Out" textFill="#1e2b3c">
+               <graphic>
+                  <ImageView fitHeight="51.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/logOut.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Comic Sans MS" size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <GridPane alignment="CENTER" hgap="50.0" layoutX="253.0" layoutY="213.0" prefHeight="737.0" prefWidth="1127.0" vgap="10.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <JFXButton fx:id="check_in_Buttton" buttonType="RAISED" contentDisplay="TOP" onAction="#goTO_check_in" prefHeight="259.0" prefWidth="361.0" ripplerFill="BLACK" style="-fx-background-color: #95ccff;" text="Check In" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="51.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="102.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/checkin.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="check_out_Buttton" buttonType="RAISED" contentDisplay="TOP" onAction="#goTo_Check_out" prefHeight="259.0" prefWidth="361.0" ripplerFill="BLACK" style="-fx-background-color: #95ccff;" text="Check Out" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="51.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="102.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Checkout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="room_booking_Buttton" buttonType="RAISED" contentDisplay="TOP" onAction="#goTo_room_booking" prefHeight="259.0" prefWidth="361.0" ripplerFill="BLACK" style="-fx-background-color: #95ccff;" text="Room Booking" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="43.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="102.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/roomBookingIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="cancel_booking_Buttton" buttonType="RAISED" contentDisplay="TOP" onAction="#goTo_cancel_booking" prefHeight="259.0" prefWidth="361.0" ripplerFill="BLACK" style="-fx-background-color: #95ccff;" text="Cancel Booking" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="40.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="102.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cancelBookingicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="roomBTN" buttonType="RAISED" contentDisplay="TOP" onAction="#goTo_Rooms" prefHeight="259.0" prefWidth="361.0" ripplerFill="BLACK" style="-fx-background-color: #95ccff;" text="Rooms" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="43.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="102.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cancelBookingicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="guestsBTN" buttonType="RAISED" contentDisplay="TOP" onAction="#goTo_Guests" prefHeight="259.0" prefWidth="361.0" ripplerFill="BLACK" style="-fx-background-color: #95ccff;" text="Guests" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="43.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="102.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cancelBookingicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </GridPane>
+      <Pane prefHeight="175.0" prefWidth="1400.0" style="-fx-background-color: #1e2b3c;">
+         <children>
+            <ImageView fitHeight="146.0" fitWidth="348.0" layoutX="21.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo0.jpg" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#95ccff" height="100.0" layoutX="499.0" layoutY="111.0" stroke="#1e2b3c" strokeType="OUTSIDE" strokeWidth="5.0" width="413.0" />
+            <Label layoutX="564.0" layoutY="103.0" text="Home Page">
+               <font>
+                  <Font name="Harlow Solid Italic" size="57.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="1132.0" layoutY="46.0" onAction="#goTo_Users" prefHeight="82.0" prefWidth="238.0" text="Settings" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="28.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/settingsICON.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

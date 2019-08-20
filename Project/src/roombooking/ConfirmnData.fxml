@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="968.0" prefWidth="1004.0" style="-fx-background-color: #F2F2F2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="roombooking.ConfirmnDataController">
+   <children>
+      <Label fx:id="emptyLabel" layoutX="74.0" layoutY="177.0" />
+      <Pane prefHeight="152.0" prefWidth="1011.0" style="-fx-background-color: #1e2b3c;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#95ccff" height="100.0" layoutX="299.0" layoutY="79.0" stroke="#1e2b3c" strokeType="OUTSIDE" strokeWidth="5.0" width="413.0" />
+            <Label layoutX="363.0" layoutY="68.0" text="Confirmtaion" textAlignment="CENTER">
+               <font>
+                  <Font name="Harlow Solid Italic" size="57.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="LogoImg" fitHeight="81.0" fitWidth="195.0" layoutX="8.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../homepage/logo0.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Pane layoutX="23.0" layoutY="241.0" prefHeight="709.0" prefWidth="507.0" scaleZ="11.0" style="-fx-border-width: 5; -fx-background-color: #fff; -fx-border-color: #1e2b3c;">
+         <children>
+            <GridPane hgap="5.0" layoutX="11.0" layoutY="40.0" prefHeight="457.0" prefWidth="485.0" vgap="5.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="248.33331298828125" minWidth="10.0" prefWidth="156.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="321.6666564941406" minWidth="10.0" prefWidth="304.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="Name">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="NameField" editable="false" prefHeight="42.0" prefWidth="294.0" promptText="First and Last name" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <Label text="Phone" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="PhoneField" editable="false" prefHeight="42.0" prefWidth="294.0" promptText="Phone number" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <Label text="Email" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label text="Address" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label text="City" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label text="Nationality" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label text="Passport No" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="EmailField" editable="false" prefHeight="42.0" prefWidth="294.0" promptText="example@website.com" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="CityField" editable="false" prefHeight="42.0" prefWidth="294.0" promptText="New York" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="NationalityField" editable="false" prefHeight="42.0" prefWidth="294.0" promptText="Egyption" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="PassportField" editable="false" prefHeight="42.0" prefWidth="294.0" promptText="12321-1231232123-4" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextArea fx:id="AddressField" editable="false" prefHeight="200.0" prefWidth="200.0" promptText="Address " GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor></TextArea>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </GridPane>
+            <Label layoutX="25.0" layoutY="519.0" text="Credit Card Information :">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="254.0" layoutY="517.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/credit-card.png" />
+               </image>
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </ImageView>
+            <GridPane layoutX="25.0" layoutY="567.0" prefHeight="110.0" prefWidth="454.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="216.0" minWidth="10.0" prefWidth="159.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="284.0" minWidth="10.0" prefWidth="284.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="Card Number">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label text="CVC code" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="CardNumField" editable="false" prefHeight="42.0" prefWidth="294.0" promptText="Card Number" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="CVCcodeField" editable="false" prefHeight="42.0" prefWidth="294.0" promptText="CVC code" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="177.0" layoutY="219.0" stroke="#1e2b3c" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+      <Label layoutX="210.0" layoutY="227.0" text="Personal Data" textFill="#1e2b3c">
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="Save_Button" buttonType="RAISED" layoutX="852.0" layoutY="884.0" onAction="#SaveButtonAction" prefHeight="55.0" prefWidth="134.0" ripplerFill="#1e2b3c" style="-fx-background-color: #009027;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="CancelButton" buttonType="RAISED" layoutX="699.0" layoutY="884.0" onAction="#CancelAction" prefHeight="55.0" prefWidth="134.0" ripplerFill="#1e2b3c" style="-fx-background-color: #8D8D8D;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <Pane layoutX="546.0" layoutY="242.0" prefHeight="347.0" prefWidth="440.0" style="-fx-border-width: 5; -fx-background-color: #fff; -fx-border-color: #1e2b3c;">
+         <children>
+            <GridPane layoutX="24.0" layoutY="54.0" prefHeight="190.0" prefWidth="380.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="223.3333740234375" minWidth="10.0" prefWidth="215.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="365.99993896484375" minWidth="10.0" prefWidth="165.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="Room_Type" text="Room Type :">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Room_Type" text="Economy" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label text="Room Capacity :" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label text="Check in date :" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label text="Check out date :" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Room_Capacity" text="Single" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="CheckOutLabel" text="mm/dd/yyyy" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="CheckInLabel" text="mm/dd/yyyy" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <Label layoutX="94.0" layoutY="279.0" text="Room ID :">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="roomIDField" editable="false" layoutX="219.0" layoutY="275.0" prefHeight="40.0" prefWidth="108.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font></JFXTextField>
+         </children>
+      </Pane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="661.0" layoutY="226.0" stroke="#1e2b3c" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+      <Label layoutX="708.0" layoutY="234.0" text="Room Data" textFill="#1e2b3c">
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+      </Label>
+      <Pane layoutX="546.0" layoutY="601.0" prefHeight="265.0" prefWidth="440.0" style="-fx-border-width: 5; -fx-background-color: #fff; -fx-border-color: #1e2b3c;">
+         <children>
+            <GridPane layoutX="30.0" layoutY="38.0" prefHeight="190.0" prefWidth="380.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="231.0" minWidth="10.0" prefWidth="231.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="365.99993896484375" minWidth="10.0" prefWidth="149.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="Number of Nights :">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Number_of_Nights" text="5" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label text="Night Cost :" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label text="Total Fees :" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Night_Cost" text="150 $" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Total_fees" text="750.00 $" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

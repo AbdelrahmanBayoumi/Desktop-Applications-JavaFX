@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="220.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.ErrorPopUpController">
+   <children>
+      <Label fx:id="messageLabel" alignment="CENTER" layoutX="10.0" layoutY="50.0" prefHeight="40.0" prefWidth="331.0" text="Error" textAlignment="CENTER" textFill="RED" AnchorPane.bottomAnchor="130.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="okbtn" buttonType="RAISED" layoutX="135.0" layoutY="157.0" onAction="#closePopUpAction" prefHeight="40.0" prefWidth="81.0" ripplerFill="BLACK" style="-fx-background-color: #000000;" text="Ok" textFill="WHITE" AnchorPane.leftAnchor="135.0" AnchorPane.rightAnchor="134.0" />
+      <Label fx:id="messageLabel1" alignment="CENTER" layoutX="10.0" layoutY="90.0" prefHeight="40.0" prefWidth="331.0" text="Could not login to your account !" textAlignment="CENTER" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="90.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

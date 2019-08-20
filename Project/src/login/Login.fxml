@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="620.0" prefWidth="690.0" style="-fx-background-color: #1e2b3c;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LoginController">
+   <children>
+      <VBox layoutX="95.0" layoutY="261.0" prefHeight="202.0" prefWidth="541.0" spacing="40.0">
+         <children>
+            <JFXTextField fx:id="UserNameField" focusColor="WHITE" labelFloat="true" onAction="#loginAction" prefHeight="52.0" prefWidth="540.0" promptText="Enter Username" style="-fx-prompt-text-fill: #ffffff; -fx-text-inner-color: #fff;" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="PasswordField" focusColor="WHITE" labelFloat="true" onAction="#loginAction" prefHeight="50.0" prefWidth="540.0" promptText="Enter Password" style="-fx-prompt-text-fill: #fff; -fx-text-inner-color: #fff;" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXPasswordField>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <JFXButton fx:id="ButtonLogin" buttonType="RAISED" layoutX="264.0" layoutY="504.0" onAction="#loginAction" prefHeight="61.0" prefWidth="163.0" ripplerFill="BLACK" style="-fx-background-color: #1e2b3c; fx-border-color: transparent; -fx-border-color: #fff; -fx-border-width: 3 3 3 3;" text="   LOGIN" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="key_pic_Login_Btn" fitHeight="36.0" fitWidth="42.0" layoutX="286.0" layoutY="517.0" onMouseClicked="#loginAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/key.png" />
+         </image>
+      </ImageView>
+      <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="62.0" layoutY="335.0" size="45" />
+      <FontAwesomeIconView fill="WHITE" glyphName="KEY" layoutX="62.0" layoutY="417.0" size="35" />
+      <ImageView fitHeight="169.0" fitWidth="437.0" layoutX="138.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo0.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

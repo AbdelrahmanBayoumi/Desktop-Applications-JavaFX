@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="690.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewusers.ViewUsersController">
+   <children>
+      <Pane prefHeight="152.0" prefWidth="690.0" style="-fx-background-color: #1e2b3c;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="116.0" fitWidth="312.0" layoutX="218.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo0.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TableView fx:id="table" layoutX="22.0" layoutY="165.0" prefHeight="431.0" prefWidth="646.0">
+        <columns>
+          <TableColumn fx:id="c1" prefWidth="236.99999237060547" text="User Name" />
+          <TableColumn fx:id="c2" prefWidth="205.33331298828125" text="Password" />
+            <TableColumn fx:id="c3" prefWidth="202.66668701171875" text="Admin Status" />
+        </columns>
+      </TableView>
+      <Pane layoutX="5.0" layoutY="3.0" prefHeight="32.0" prefWidth="254.0">
+         <children>
+            <FontAwesomeIconView fill="WHITE" glyphName="CHEVRON_LEFT" layoutX="5.0" layoutY="23.0" onMouseClicked="#goToUsers" size="10" underline="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIconView>
+            <Label layoutX="15.0" layoutY="1.0" onMouseClicked="#goToUsers" text="Back" textFill="WHITE" underline="true">
+               <font>
+                  <Font size="23.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
