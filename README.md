@@ -1,6 +1,7 @@
-# Hotel management system JavaFX
+# Hotel management system JavaFX 
 
 ![Background](https://i.imgur.com/Fk7sfMT.jpg)
+
 
 Desktop Application to Manage the reservations and Guest Check-in or Check-Out Using JavaFX and SQL Database with Hibernate ORM.
 
@@ -16,44 +17,67 @@ Desktop Application to Manage the reservations and Guest Check-in or Check-Out U
 
 ## Screenshots
 
-1- Launcher
-![Launcher](https://i.imgur.com/Fk7sfMT.jpg)
+- Log In
 
-1- Log In
-![Background]https://i.imgur.com/zBAh3az.png)
+![Background](https://i.imgur.com/zBAh3az.png)
 
-1- Home Page
+
+- Home Page
+
 ![Background](https://i.imgur.com/fuKdULD.png)
 
-1- Settings
+
+- Settings
+
 ![Background](https://i.imgur.com/0KEoCtJ.png)
 
-1- Add User
+
+- Add User
+
 ![Background](https://i.imgur.com/xVpNJBH.png)
 
-1- Delete User
+
+- Delete User
+
 ![Background](https://i.imgur.com/H9yBAmJ.png)
 
-1- Show Users
+
+- Show Users
+
 ![Background](https://i.imgur.com/cjaQxpl.png)
 
-1- Check-In
+
+- Check-In
+
 ![Background](https://i.imgur.com/zdMH2UW.png)
 
-1- Confirmation
+
+- Confirmation
+
 ![Background](https://i.imgur.com/yPqoyTb.png)
 
-1- Check-Out
+
+- Check-Out
+
 ![Background](https://i.imgur.com/cfLlQgb.png)
 
-1- Room Booking
+
+- Room Booking
+
 ![Background](https://i.imgur.com/F2YisGh.png)
 
-1- Cancel Booking
+
+- Cancel Booking
+
 ![Background](https://i.imgur.com/L8z7CPS.png)
 
-1- Rooms
+
+- Rooms
+
 ![Rooms](https://i.imgur.com/FmmeefD.png)
 
-1- Guest
+
+- Guest
+
 ![Guest](https://i.imgur.com/OZlb13s.png)
+
