@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMouseDragged="#RootMouseDragged" onMousePressed="#RootMousePressed" style="-fx-background-color: #141e2a; -fx-border-color: #1e3953; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.ViewController">
+   <children>
+      <JFXButton />
+      <VBox alignment="CENTER" layoutX="10.0" layoutY="9.0" prefHeight="351.0" prefWidth="587.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <HBox alignment="CENTER" spacing="40.0">
+               <children>
+                  <Label fx:id="timerLabel" text="00:00:00" textFill="WHITE">
+                     <font>
+                        <Font size="61.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="141.0" prefWidth="378.0" spacing="20.0">
+               <children>
+                  <JFXButton fx:id="startTimerButton" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#startTimer" ripplerFill="WHITE" text="Start" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="PLAY" size="40" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="pauseTimerButton" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#pauseTimer" ripplerFill="WHITE" text="Pause" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="PAUSE" size="40" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#endTimer" ripplerFill="WHITE" text="Stop" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="STOP" size="40" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <Pane prefHeight="35.0" prefWidth="600.0" style="-fx-background-color: #1e3953;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="5.0" layoutY="5.0" prefHeight="19.0" prefWidth="127.0" text="Stopwatch" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <JFXButton onAction="#closeWindow" prefHeight="35.0" text="X" textFill="WHITE" AnchorPane.rightAnchor="0.0" />
+      <JFXButton layoutX="520.0" onAction="#MaxWindow" prefHeight="35.0" prefWidth="49.0" text="🗖" textFill="WHITE" AnchorPane.rightAnchor="35.0">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="11.0" layoutY="330.0" onMouseClicked="#NameAction" text="Developed By Abdelrahman Bayoumi ©" textFill="WHITE" AnchorPane.bottomAnchor="2.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <JFXButton focusTraversable="false" layoutX="405.0" onAction="#MinWindow" prefHeight="43.0" prefWidth="49.0" text="_" textFill="WHITE" AnchorPane.rightAnchor="84.0" AnchorPane.topAnchor="-14.0">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>
