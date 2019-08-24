@@ -1,8 +1,8 @@
-# Change Case Javafx
+# Age Calculator Javafx
 
-![Background](https://i.imgur.com/jjWwz87.png)
+![Background](https://i.imgur.com/YxtPGBo.png)
 
-Change Letter Case Desktop application 
+Age Calculator desktop application 
 
 
 
