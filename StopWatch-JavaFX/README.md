@@ -1,8 +1,8 @@
-# Simple-Calculator-in-Javafx
+# StopWatch Javafx
 
-![Background](https://i.imgur.com/elERcrh.png)
+![Background](https://i.imgur.com/z4iY7d4.png)
 
-Simple Calculator in Javafx
+StopWatch Desktop application 
 
 
 
