@@ -1,8 +1,8 @@
-# StopWatch Javafx
+# Change Case Javafx
 
-![Background](https://i.imgur.com/z4iY7d4.png)
+![Background](https://i.imgur.com/jjWwz87.png)
 
-StopWatch Desktop application 
+Change Letter Case Desktop application 
 
 
 
