@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane fx:id="AP" onKeyPressed="#AP_keyListener" onMouseDragged="#RootMouseDragged" onMousePressed="#RootMousePressed" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainClass.appController">
+   <children>
+      <AnchorPane id="AnchorPane" onKeyPressed="#AP_keyListener" onMouseDragged="#RootMouseDragged" onMousePressed="#RootMousePressed" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #141e2a;" stylesheets="@style.css">
+          <children>
+            <VBox alignment="CENTER" layoutX="-1.0" layoutY="44.0" prefHeight="346.0" prefWidth="400.0" spacing="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="44.0">
+               <children>
+                  <Label text="Random Number Generator" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS" size="25.0" />
+                     </font>
+                  </Label>
+                  <GridPane alignment="CENTER" hgap="10.0" prefHeight="156.0" prefWidth="348.0" vgap="10.0" VBox.vgrow="ALWAYS">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="110.66667175292969" minWidth="10.0" prefWidth="78.00000762939453" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="269.66666412353516" minWidth="10.0" prefWidth="266.99999237060547" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                          <Label minHeight="16" minWidth="36.0" text="Min" textFill="WHITE">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="MinTextField" focusColor="#b2e0ff" labelFloat="true" promptText="Enter number" style="-fx-text-fill: #fff;" unFocusColor="#95ccff" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" />
+                        <Label minHeight="16" minWidth="36.0" text="Max" textFill="WHITE" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="MaxTextField" focusColor="#b2e0ff" labelFloat="true" promptText="Enter number" style="-fx-text-fill: #fff;" unFocusColor="#95ccff" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </padding>
+                  </GridPane>
+                  <JFXButton onAction="#GenerateAction" prefHeight="48.0" prefWidth="186.0" style="-fx-background-color: #B2E0FF;" text="Generate" />
+                  <HBox alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" spacing="30.0">
+                     <children>
+                        <TextField fx:id="ResultField" alignment="CENTER" editable="false" prefHeight="31.0" prefWidth="193.0" style="-fx-text-fill: #000000;" />
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="36.0" prefWidth="113.0" text="Result" textFill="WHITE">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <Pane prefHeight="35.0" prefWidth="400.0" style="-fx-background-color: #1e3953;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <MenuBar fx:id="menuBar" maxHeight="98.0" prefHeight="35.0" prefWidth="73.0" style="-fx-background-color: #1e3953;">
+                     <menus>
+                        <Menu id="file" fx:id="file" mnemonicParsing="false" text="File">
+                           <items>
+                              <MenuItem id="close" fx:id="About" mnemonicParsing="false" onAction="#aboutWidow" text="About">
+                                 <accelerator>
+                                    <KeyCodeCombination alt="UP" code="I" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                                 </accelerator>
+                              </MenuItem>
+                              <MenuItem id="close" fx:id="close" mnemonicParsing="false" onAction="#closeWindow" text="Close">
+                                 <accelerator>
+                                    <KeyCodeCombination alt="UP" code="W" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                                 </accelerator>
+                              </MenuItem>
+                           </items>
+                        </Menu>
+                     </menus>
+                  </MenuBar>
+               </children>
+            </Pane>
+            <JFXButton layoutX="265.0" onAction="#MinWindow" prefHeight="35.0" prefWidth="49.0" text="_" textFill="WHITE" AnchorPane.rightAnchor="86.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="314.0" onAction="#MaxWindow" prefHeight="35.0" prefWidth="49.0" text="🗖" textFill="WHITE" AnchorPane.rightAnchor="37.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </JFXButton>
+            <Pane layoutY="395.0" prefHeight="5.0" prefWidth="400.0" style="-fx-background-color: #1e3953;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Pane prefHeight="400.0" prefWidth="5.0" style="-fx-background-color: #1e3953;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Pane layoutX="395.0" prefHeight="400.0" prefWidth="5.0" style="-fx-background-color: #1e3953;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <JFXButton layoutX="363.0" onAction="#closeWindow" prefHeight="31.0" prefWidth="37.0" text="X" textFill="WHITE" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </JFXButton>
+          </children>
+      </AnchorPane>
+   </children>
+</StackPane>
