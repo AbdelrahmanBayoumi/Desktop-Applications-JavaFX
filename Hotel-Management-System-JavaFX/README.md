@@ -81,3 +81,7 @@ Desktop Application to Manage the reservations and Guest Check-in or Check-Out U
 
 ![Guest](https://i.imgur.com/OZlb13s.png)
 
+
+
+.سبحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لا إِلهَ إِلأَ انْتَ أَسْتَغْفِرُكَ وَأَتْوبُ إِلَيْكَ
+
