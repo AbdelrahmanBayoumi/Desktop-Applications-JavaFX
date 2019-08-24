@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMouseDragged="#RootMouseDragged" onMousePressed="#RootMousePressed" style="-fx-background-color: #00695C; -fx-border-color: #004D40; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="changecase.ChangeCaseController">
+   <children>
+      <VBox alignment="CENTER" layoutX="10.0" layoutY="9.0" prefHeight="351.0" prefWidth="587.0" spacing="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Change Case App" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="35.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="31.0" prefWidth="554.0" spacing="30.0">
+               <children>
+                  <Label text="Text :" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="inputField" alignment="CENTER" onKeyReleased="#keyPressedAction" prefHeight="31.0" prefWidth="405.0" />
+               </children>
+            </HBox>
+            <GridPane alignment="CENTER" prefHeight="128.0" prefWidth="405.0" vgap="20.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.0" minWidth="10.0" prefWidth="96.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="439.0" minWidth="10.0" prefWidth="422.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="Upper Case" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Lower Case" textFill="WHITE" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="UpperField" editable="false" GridPane.columnIndex="1" />
+                  <TextField fx:id="LowerField" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </GridPane>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <Pane prefHeight="35.0" prefWidth="600.0" style="-fx-background-color: #004D40;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <JFXButton onAction="#closeWindow" prefHeight="35.0" text="X" textFill="WHITE" AnchorPane.rightAnchor="0.0" />
+      <JFXButton layoutX="520.0" onAction="#MaxWindow" prefHeight="35.0" prefWidth="49.0" text="🗖" textFill="WHITE" AnchorPane.rightAnchor="35.0">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="11.0" layoutY="330.0" onMouseClicked="#NameAction" text="Developed By Abdelrahman Bayoumi ©" textFill="WHITE" AnchorPane.bottomAnchor="2.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <JFXButton focusTraversable="false" layoutX="405.0" onAction="#MinWindow" prefHeight="43.0" prefWidth="49.0" text="_" textFill="WHITE" AnchorPane.rightAnchor="84.0" AnchorPane.topAnchor="-14.0">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>
