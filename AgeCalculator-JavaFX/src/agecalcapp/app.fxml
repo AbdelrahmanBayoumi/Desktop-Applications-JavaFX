@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="AP" onKeyPressed="#AP_keyListener" onMouseDragged="#RootMouseDragged" onMousePressed="#RootMousePressed" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agecalcapp.appController">
+   <children>
+      <AnchorPane id="AnchorPane" onKeyPressed="#AP_keyListener" onMouseDragged="#RootMouseDragged" onMousePressed="#RootMousePressed" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #f5f5f5;" stylesheets="@style.css">
+         <children>
+            <VBox alignment="CENTER" layoutY="35.0" prefHeight="561.0" prefWidth="600.0" spacing="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="34.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="104.0" prefWidth="600.0" style="-fx-background-color: #1b5e20;">
+                     <children>
+                        <Label text="Age Calculator" textFill="WHITE">
+                           <font>
+                              <Font name="Comic Sans MS" size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <GridPane alignment="CENTER" hgap="10.0" prefHeight="180.0" prefWidth="600.0" vgap="10.0" VBox.vgrow="ALWAYS">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="185.0" minWidth="10.0" prefWidth="185.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="269.66666412353516" minWidth="10.0" prefWidth="165.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label minHeight="16" minWidth="36.0" prefHeight="36.0" text="Date of Birth">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label minHeight="16" minWidth="36.0" text="Current Date" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <JFXDatePicker fx:id="birthDatePicker" prefHeight="31.0" prefWidth="231.0" GridPane.columnIndex="1" />
+                        <JFXDatePicker fx:id="currentDatePicker" prefHeight="31.0" prefWidth="230.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </padding>
+                  </GridPane>
+                  <JFXButton onAction="#CalcAction" prefHeight="62.0" prefWidth="186.0" style="-fx-background-color: #4c8c4a;" text="Calculate" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></JFXButton>
+                  <HBox alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="96.0" prefWidth="600.0" spacing="30.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #99d066;">
+                           <children>
+                              <Label text="Days">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="daysLabel" text="0">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #99d066;">
+                           <children>
+                              <Label text="Months">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="monthLabel" text="0">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #99d066;">
+                           <children>
+                              <Label text="Years">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="yearLable" text="0">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="36.0" text="Your Age is :">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </VBox>
+            <Pane prefHeight="35.0" prefWidth="400.0" style="-fx-background-color: #003300;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <MenuBar fx:id="menuBar" maxHeight="98.0" prefHeight="35.0" prefWidth="73.0" style="-fx-background-color: #003300;">
+                     <menus>
+                        <Menu id="file" fx:id="file" mnemonicParsing="false" text="File">
+                           <items>
+                              <MenuItem id="close" fx:id="About" mnemonicParsing="false" onAction="#aboutWidow" text="About">
+                                 <accelerator>
+                                    <KeyCodeCombination alt="UP" code="I" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                                 </accelerator>
+                              </MenuItem>
+                              <MenuItem id="close" fx:id="close" mnemonicParsing="false" onAction="#closeWindow" text="Close">
+                                 <accelerator>
+                                    <KeyCodeCombination alt="UP" code="W" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                                 </accelerator>
+                              </MenuItem>
+                           </items>
+                        </Menu>
+                     </menus>
+                  </MenuBar>
+               </children>
+            </Pane>
+            <JFXButton layoutX="314.0" onAction="#MaxWindow" prefHeight="35.0" prefWidth="49.0" text="🗖" textFill="WHITE" AnchorPane.rightAnchor="37.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </JFXButton>
+            <Pane layoutY="395.0" prefHeight="5.0" prefWidth="400.0" style="-fx-background-color: #003300;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Pane prefHeight="400.0" prefWidth="5.0" style="-fx-background-color: #003300;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Pane layoutX="395.0" prefHeight="400.0" prefWidth="5.0" style="-fx-background-color: #003300;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <JFXButton layoutX="363.0" onAction="#closeWindow" prefHeight="31.0" prefWidth="37.0" text="X" textFill="WHITE" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
