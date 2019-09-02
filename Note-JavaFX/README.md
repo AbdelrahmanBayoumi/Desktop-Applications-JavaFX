@@ -1,4 +1,8 @@
 ﻿# Notes Javafx
+ 
+ 
+ - Notes App is javaFX application with [HSQLDB](http://hsqldb.org/) (embedded database)
+ 
 
 ![Background](https://i.imgur.com/6DRM2hi.png)
 
