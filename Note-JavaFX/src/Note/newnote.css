@@ -1,0 +1,10 @@
+.AP{
+    -fx-background-color: #FFF2AB;
+    /*-fx-border-color:#cccc00;*/
+    -fx-border-color:#000000;
+    -fx-border-width:3;
+}
+.ADD-BTN{
+    -fx-background-color: #ffffcc;
+
+}

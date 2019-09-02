@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="AP" onMouseDragged="#RootMouseDragged" onMousePressed="#RootMousePressed" prefHeight="440.0" prefWidth="440.0" styleClass="AP" stylesheets="@newnote.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Note.NewNoteController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTextArea fx:id="text" focusColor="#ffffff00" nodeOrientation="LEFT_TO_RIGHT" prefHeight="408.0" prefWidth="434.0" promptText="Take a note ..." unFocusColor="#ffffff00">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextArea>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </Separator>
+            <HBox alignment="CENTER" prefHeight="49.0" prefWidth="400.0" spacing="30.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="33.0" prefWidth="160.0" style="-fx-border-color: #000000;">
+                     <children>
+                        <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" onAction="#green" prefHeight="40.0" prefWidth="40.0" ripplerFill="#26ff00" style="-fx-background-color: #A1EF9B;" styleClass="greenBTN" />
+                        <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" onAction="#blue" prefHeight="40.0" prefWidth="40.0" ripplerFill="#00daff" style="-fx-background-color: #9EDFFF;" styleClass="blueBTN" />
+                        <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#yellow" prefHeight="40.0" prefWidth="40.0" ripplerFill="#e1ff00" style="-fx-background-color: #FFE66E;" styleClass="yellow" />
+                        <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#gray" prefHeight="40.0" prefWidth="40.0" ripplerFill="#9e9e9e" style="-fx-background-color: #E0E0E0;" styleClass="gray" />
+                     </children>
+                  </HBox>
+                  <JFXButton fx:id="closeBTN" onAction="#closeAction" prefHeight="31.0" prefWidth="75.0" styleClass="ADD-BTN" text="Close" />
+                  <JFXButton fx:id="addBTN" onAction="#AddAction" prefHeight="31.0" prefWidth="75.0" styleClass="ADD-BTN" text="ADD" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

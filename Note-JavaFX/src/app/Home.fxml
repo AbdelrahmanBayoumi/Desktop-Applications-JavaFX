@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="AP" stylesheets="@home.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.HomeController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="900.0" style="-fx-border-color: #303F9F; -fx-border-width: 3;">
+         <children>
+            <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0">
+               <top>
+                  <Pane prefHeight="100.0" prefWidth="900.0" style="-fx-background-color: #3F51B5;" BorderPane.alignment="CENTER">
+                     <children>
+                        <JFXButton contentDisplay="GRAPHIC_ONLY" focusTraversable="false" layoutX="822.0" layoutY="25.0" onAction="#AddNoteAction">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="40" />
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton contentDisplay="GRAPHIC_ONLY" focusTraversable="false" layoutX="762.0" layoutY="25.0" onAction="#refresh">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" size="40" />
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <Label layoutX="14.0" layoutY="11.0" prefHeight="75.0" prefWidth="161.0" text="Notes" textFill="WHITE">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="53.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </top>
+               <center>
+                  <ScrollPane prefHeight="759.0" prefWidth="859.0" BorderPane.alignment="CENTER">
+                     <content>
+                        <VBox prefWidth="873.0" spacing="30.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="891.0" spacing="10.0">
+                                 <children>
+                                    <AnchorPane prefHeight="35.0" prefWidth="908.0">
+                                       <children>
+                                          <JFXTextField fx:id="searchComBox" focusColor="#90acff" onKeyReleased="#searchEvent" prefHeight="35.0" prefWidth="882.0" promptText="Search" style="-fx-background-color: #e4e4e4;" unFocusColor="#ffffff00" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                             <padding>
+                                                <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                          </JFXTextField>
+                                          <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="3.0" layoutY="3.0" styleClass="noStyle" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="2.0">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="#949494" glyphName="SEARCH" size="20" />
+                                             </graphic>
+                                          </JFXButton>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <FlowPane fx:id="FP" alignment="CENTER" hgap="10.0" prefWidth="863.0" prefWrapLength="0.0" rowValignment="TOP" vgap="10.0" />
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </center>
+            </BorderPane>
+            <Pane onMouseDragged="#RootMouseDragged" onMousePressed="#RootMousePressed" prefHeight="35.0" prefWidth="900.0" style="-fx-background-color: #303F9F;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <MenuBar fx:id="menuBar" maxHeight="98.0" prefHeight="35.0" prefWidth="63.0" style="-fx-background-color: #303F9F;">
+                     <menus>
+                        <Menu id="file" fx:id="file" mnemonicParsing="false" text="File">
+                           <items>
+                              <MenuItem id="close" fx:id="About" mnemonicParsing="false" onAction="#aboutWidow" text="About">
+                                 <accelerator>
+                                    <KeyCodeCombination alt="UP" code="I" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                                 </accelerator>
+                              </MenuItem>
+                              <MenuItem id="close" fx:id="close" mnemonicParsing="false" onAction="#closeWindow" text="Close">
+                                 <accelerator>
+                                    <KeyCodeCombination alt="UP" code="W" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                                 </accelerator>
+                              </MenuItem>
+                           </items>
+                        </Menu>
+                     </menus>
+                  </MenuBar>
+               </children>
+            </Pane>
+            <JFXButton focusTraversable="false" onAction="#closeWindow" prefHeight="35.0" prefWidth="35.0" text="X" textFill="WHITE" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
