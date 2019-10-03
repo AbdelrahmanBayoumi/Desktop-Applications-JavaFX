@@ -1,0 +1,4 @@
+.btn-contact:hover {
+    -fx-cursor: hand;
+    -fx-fill: #939393
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="240.0" prefWidth="451.0" style="-fx-border-color: #000000; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Help.HelpController">
+   <children>
+      <VBox alignment="CENTER" layoutX="21.0" layoutY="17.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER">
+               <children>
+                  <Label text="It is used to convert images in JPG/PNG/GIF format into ICO">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Developed with Java, By Bayoumi ©">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="77.0" prefWidth="450.0" spacing="10.0">
+               <children>
+                  <HBox alignment="CENTER" spacing="10.0">
+                     <children>
+                        <FontAwesomeIconView glyphName="ENVELOPE" onMouseClicked="#mailAction" onMousePressed="#mailAction" size="30" styleClass="btn-contact" text="" />
+                        <Label onMouseClicked="#mailAction" onMousePressed="#mailAction" text="abdelrahmanbayoumi1@gmail.com" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" spacing="10.0">
+                     <children>
+                        <FontAwesomeIconView glyphName="GITHUB" onMouseClicked="#githubAction" onMousePressed="#githubAction" size="35" styleClass="btn-contact" text="" />
+                        <Label onMouseClicked="#githubAction" onMousePressed="#githubAction" text="AbdelrahmanBayoumi" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Button mnemonicParsing="false" onAction="#okAction" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #000000;" text="Close" textFill="WHITE" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

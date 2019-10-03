@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="390.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appWindow.AppController">
+   <children>
+      <VBox alignment="CENTER" layoutX="37.0" layoutY="66.0" spacing="40.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Convert TO ICO">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="52.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="21.0" text="Source :" />
+                  <TextField fx:id="textField" focusTraversable="false" prefHeight="31.0" prefWidth="351.0" promptText="Choose image file" />
+                  <Button mnemonicParsing="false" onAction="#openAction" prefHeight="31.0" prefWidth="116.0" style="-fx-background-color: gray;" text="Open" textFill="WHITE" />
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#convertAction" prefHeight="54.0" prefWidth="443.0" style="-fx-background-color: green; -fx-background-radius: 20;" text="Convert" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+            <HBox spacing="10.0" VBox.vgrow="NEVER">
+               <children>
+                  <Label text="Status :" />
+                  <Label fx:id="statusLabel" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+         </padding>
+      </VBox>
+      <Label layoutX="5.0" layoutY="5.0" onMouseClicked="#helpAction" text="Help" textFill="#000dff" underline="true" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>
