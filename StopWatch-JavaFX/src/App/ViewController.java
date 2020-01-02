@@ -88,7 +88,6 @@ public class ViewController implements Initializable {
     //===============================================
     //===============================================
     //===============================================
-
     public boolean isMaximized(Event event) {
         Stage s = ((Stage) (((Node) (event.getSource())).getScene().getWindow()));
         Screen screen = Screen.getPrimary();
@@ -153,7 +152,8 @@ public class ViewController implements Initializable {
 
     @FXML
     private void closeWindow(ActionEvent event) {
-        System.exit(0);
+//        System.exit(0);
+        ((Stage) (((Node) (event.getSource())).getScene().getWindow())).hide();
     }
     //===============================================
 

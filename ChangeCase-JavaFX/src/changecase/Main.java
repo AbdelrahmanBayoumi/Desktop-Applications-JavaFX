@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package changecase;
 
 import javafx.application.Application;
@@ -13,22 +8,20 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-/**
- *
- * @author UpToDate
- */
 public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("ChangeCase.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/MainWindow.fxml"));
 
         Scene scene = new Scene(root);
-
+        scene.getStylesheets().add(
+                getClass().getResource("/resources/green-theme.css").toExternalForm());
         stage.setScene(scene);
         stage.initStyle(StageStyle.UNDECORATED);
+        stage.setTitle("Change Case");
         stage.getIcons().add(new Image(getClass()
-                .getResourceAsStream("change-case.png")));
+                .getResourceAsStream("/images/change-case.png")));
         stage.show();
     }
 

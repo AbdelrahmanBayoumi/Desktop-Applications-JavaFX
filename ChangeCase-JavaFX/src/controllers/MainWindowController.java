@@ -1,15 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package changecase;
+package controllers;
 
 import java.awt.Desktop;
 import java.net.URI;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -21,11 +15,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 
-/**
- *
- * @author UpToDate
- */
-public class ChangeCaseController implements Initializable {
+public class MainWindowController implements Initializable {
 
     private double xOffset = 0;
     private double yOffset = 0;
@@ -38,17 +28,13 @@ public class ChangeCaseController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        System.out.println("ChangeCaseController -> initialize() ... ");
     }
 
     public boolean isMaximized(Event event) {
         Stage s = ((Stage) (((Node) (event.getSource())).getScene().getWindow()));
         Screen screen = Screen.getPrimary();
         Rectangle2D bounds = screen.getVisualBounds();
-        if (s.getWidth() == bounds.getWidth() && s.getHeight() == bounds.getHeight()) {
-            return true;
-        }
-        return false;
+        return s.getWidth() == bounds.getWidth() && s.getHeight() == bounds.getHeight();
     }
 
     @FXML
@@ -59,8 +45,8 @@ public class ChangeCaseController implements Initializable {
             s.setHeight(361);
             Screen screen = Screen.getPrimary();
             Rectangle2D bounds = screen.getVisualBounds();
-            s.setX(bounds.getWidth() / 2 - (305));
-            s.setY(bounds.getHeight() / 2 - (180));
+            s.setX(bounds.getWidth() / 2 - (610 / 2));
+            s.setY(bounds.getHeight() / 2 - (361 / 2));
         } else {
             Screen screen = Screen.getPrimary();
             Rectangle2D bounds = screen.getVisualBounds();
@@ -104,14 +90,43 @@ public class ChangeCaseController implements Initializable {
     }
 
     @FXML
-    private void closeWindow(ActionEvent event) {
+    private void closeWindow(Event event) {
         System.exit(0);
     }
 
     @FXML
     private void keyPressedAction(KeyEvent event) {
-        System.out.println("ChangeCaseController -> keyPressedAction() ... ");
         UpperField.setText(inputField.getText().toUpperCase());
         LowerField.setText(inputField.getText().toLowerCase());
+    }
+
+    private void changeStylesheets(String uri, Event event) {
+        ((Node) (event.getSource())).getScene().getStylesheets().clear();
+        ((Node) (event.getSource())).getScene().getStylesheets().add(
+                getClass().getResource(uri).toExternalForm());
+    }
+    int counter = 0;
+
+    @FXML
+    private void changeTheme(Event event) {
+        switch (counter) {
+            case 0:
+                System.out.println("dark");
+                changeStylesheets("/resources/dark-theme.css", event);
+                break;
+            case 1:
+                System.out.println("blue");
+                changeStylesheets("/resources/blue-theme.css", event);
+                break;
+            case 2:
+                System.out.println("green");
+                changeStylesheets("/resources/green-theme.css", event);
+                break;
+            case 3:
+                System.out.println("red");
+                changeStylesheets("/resources/red-theme.css", event);
+                break;
+        }
+        counter = ++counter % 4;
     }
 }
