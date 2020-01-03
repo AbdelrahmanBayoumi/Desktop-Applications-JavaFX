@@ -1,16 +1,14 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
 /* 
-    Created on : 1 Jun, 2020, 8:12:46 AM
-    Author     : Abdlerahman Bayoumi
+    Created on : Jan 3, 2020, 11:57:07 PM
+    Author     : Ehab
 */
 
-* {
-    -fx-primary :  #00695C;
-    -fx-secondary :  #004D40;
-    -fx-primarytext : #ffffff;
-    -fx-secondarytext : #00dcc1;
-}
-
-/*.root{
+.root{
     -fx-background-color: -fx-primary;
     -fx-border-color: -fx-secondary;
     -fx-border-width: 5;
@@ -19,8 +17,6 @@
 .pane{
     -fx-background-color: -fx-secondary;
 }
-
-
 
 .test-button{
     -fx-text-fill: -fx-primarytext;
@@ -48,4 +44,4 @@
 .escape-buttons{
     -fx-text-fill: -fx-primarytext;
     -fx-background-color: transparent;
-}*/
+}

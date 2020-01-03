@@ -10,7 +10,7 @@
     -fx-secondarytext : #90acff;
 }
 
-.root{
+/*.root{
     -fx-background-color: -fx-primary;
     -fx-border-color: -fx-secondary;
     -fx-border-width: 5;
@@ -48,4 +48,4 @@
 .escape-buttons{
     -fx-text-fill: -fx-primarytext;
     -fx-background-color: transparent;
-}
+}*/
