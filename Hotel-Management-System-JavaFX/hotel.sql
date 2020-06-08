@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 20, 2019 at 04:37 AM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 7.3.3
+-- Generation Time: Jun 08, 2020 at 09:01 PM
+-- Server version: 10.4.6-MariaDB
+-- PHP Version: 7.3.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -39,19 +39,21 @@ CREATE TABLE `guest` (
   `phoneNo` varchar(50) NOT NULL,
   `Card_Number` varchar(50) NOT NULL,
   `card_Pass` varchar(50) NOT NULL,
-  `number_Of_Days` int(10) NOT NULL
+  `number_Of_Days` int(10) NOT NULL,
+  `fees` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `guest`
 --
 
-INSERT INTO `guest` (`room_ID`, `Name`, `Email`, `Address`, `city`, `Nationality`, `passport_Number`, `phoneNo`, `Card_Number`, `card_Pass`, `number_Of_Days`) VALUES
-(72, 'Eslam', 'jgfyi', 'ggffyf', 'gfghf', 'fyy', '012055', '0254545', '54541', '5454', 26),
-(81, 'Mohamed', 'Mohamed@yahoo.com', 'masr el gedida', 'Cairo', 'Egyption', '8987-07321-3213', '01020781942', '76676786980989', '65456', 6),
-(71, 'Abdelrahman', 'abdo@gmail.com', 'mustafa Kamel	', 'alex', 'egypt', '97987987897', '9080980989080', '8978978978', '9879798798', 6),
-(2, 'gyhggvb', 'ggygvgfbgyg', 'hgjhg', 'yggug', 'ggggg', 'gfvgdfgg', 'ggg', '8797595', '562779852', 16),
-(1, 'hh', 'hh', 'h	h	', 'h', 'h', 'h', 'h', 'h', 'h', 10601);
+INSERT INTO `guest` (`room_ID`, `Name`, `Email`, `Address`, `city`, `Nationality`, `passport_Number`, `phoneNo`, `Card_Number`, `card_Pass`, `number_Of_Days`, `fees`) VALUES
+(72, 'Eslam', 'jgfyi', 'ggffyf', 'gfghf', 'fyy', '012055', '0254545', '54541', '5454', 26, 0),
+(81, 'Mohamed', 'Mohamed@yahoo.com', 'masr el gedida', 'Cairo', 'Egyption', '8987-07321-3213', '01020781942', '76676786980989', '65456', 6, 0),
+(71, 'Abdelrahman', 'abdo@gmail.com', 'mustafa Kamel	', 'alex', 'egypt', '97987987897', '9080980989080', '8978978978', '9879798798', 6, 0),
+(2, 'gyhggvb', 'ggygvgfbgyg', 'hgjhg', 'yggug', 'ggggg', 'gfvgdfgg', 'ggg', '8797595', '562779852', 16, 0),
+(1, 'hh', 'hh', 'h	h	', 'h', 'h', 'h', 'h', 'h', 'h', 10601, 0),
+(3, 'kjl', 'dasa@hjh.com', '78678', 'ihgjhjk', 'hjkh', 'jhkjhjkhkj', '6786876', '787', '87787', 22, 4400);
 
 -- --------------------------------------------------------
 
@@ -75,7 +77,7 @@ CREATE TABLE `room` (
 INSERT INTO `room` (`roomID`, `room_Type`, `room_capacity`, `Check_In_Date`, `Check_Out_Date`, `isEmpty`) VALUES
 (1, 'Economy', 'Single', '2019-05-12', '2048-05-20', 0),
 (2, 'Economy', 'Single', '2019-08-13', '2019-08-29', 0),
-(3, 'Economy', 'Single', '2019-04-14', '2019-04-14', 1),
+(3, 'Economy', 'Single', '2020-06-08', '2020-06-30', 0),
 (4, 'Economy', 'Single', '2019-04-14', '2019-04-14', 1),
 (5, 'Economy', 'Single', '2019-04-14', '2019-04-14', 1),
 (6, 'Economy', 'Single', '2019-04-14', '2019-04-14', 1),
