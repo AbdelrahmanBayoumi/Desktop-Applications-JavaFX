@@ -1,90 +1,58 @@
-# Hotel management system JavaFX 
+# Hotel Management System - JavaFX 
 
-![Background](https://i.imgur.com/Fk7sfMT.jpg)
+<div align="center">
+<img src="https://i.imgur.com/Fk7sfMT.jpg" >
+<h4>Desktop Application to Manage the reservations and Guest Check-in or Check-Out Using JavaFX and SQL Database with Hibernate ORM.</h4>
+</div>
 
-
-Desktop Application to Manage the reservations and Guest Check-in or Check-Out Using JavaFX and SQL Database with Hibernate ORM.
-
-Teammate : [Mohammed Amgad](https://github.com/MohamedAmgd)
-
-
-## Installation
+## Getting Started
 
 1- Install  [XAMMP](https://www.apachefriends.org/index.html) for MySQL server.
 
-2- Import hotel.sql to import the database.
+2- Import [hotel.sql](/Hotel-Management-System-JavaFX/hotel.sql) to import the database.
 
-3- Run the Program.
-
+3- Run the Program using [Project.java](/Hotel-Management-System-JavaFX/src/project/Project.java).
 
 
 ## Screenshots
 
-- Log In
+-----
 
-![Background](https://i.imgur.com/zBAh3az.png)
+<div align="center">
+  <h2>Overview</h2>
+<img src="/Hotel-Management-System-JavaFX/screenshots/001.gif" alt= "image">
+</div>
 
+-----
 
-- Home Page
+<div align="center">
+  <h2>Login</h2>
+<img src="/Hotel-Management-System-JavaFX/screenshots/005.gif" alt= "image">
+</div>
 
-![Background](https://i.imgur.com/fuKdULD.png)
-
-
-- Settings
-
-![Background](https://i.imgur.com/0KEoCtJ.png)
-
-
-- Add User
-
-![Background](https://i.imgur.com/xVpNJBH.png)
+-----
 
 
-- Delete User
+<div align="center">
+  <h2>Check-In Process</h2>
+<img src="/Hotel-Management-System-JavaFX/screenshots/002.gif" alt= "image">
+</div>
 
-![Background](https://i.imgur.com/H9yBAmJ.png)
-
-
-- Show Users
-
-![Background](https://i.imgur.com/cjaQxpl.png)
+-----
 
 
-- Check-In
+<div align="center">
+  <h2>Cancel Booking</h2>
+<img src="/Hotel-Management-System-JavaFX/screenshots/003.gif" alt= "image">
+</div>
 
-![Background](https://i.imgur.com/zdMH2UW.png)
-
-
-- Confirmation
-
-![Background](https://i.imgur.com/yPqoyTb.png)
+-----
 
 
-- Check-Out
+<div align="center">
+  <h2>Add, Delete and Show Users</h2>
+<img src="/Hotel-Management-System-JavaFX/screenshots/004.gif" alt= "image">
+</div>
 
-![Background](https://i.imgur.com/cfLlQgb.png)
-
-
-- Room Booking
-
-![Background](https://i.imgur.com/F2YisGh.png)
-
-
-- Cancel Booking
-
-![Background](https://i.imgur.com/L8z7CPS.png)
-
-
-- Rooms
-
-![Rooms](https://i.imgur.com/FmmeefD.png)
-
-
-- Guest
-
-![Guest](https://i.imgur.com/OZlb13s.png)
-
-
-
-> سبحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لا إِلهَ إِلأَ انْتَ أَسْتَغْفِرُكَ وَأَتْوبُ إِلَيْكَ.
-
+----
+<h6 align="center">سبحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لا إِلهَ إِلأَ انْتَ أَسْتَغْفِرُكَ وَأَتْوبُ إِلَيْكَ</h6>
