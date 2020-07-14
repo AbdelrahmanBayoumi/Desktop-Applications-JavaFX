@@ -1,7 +1,7 @@
 # Simple-Calculator-in-Javafx
 
 <div align="center">
-<img src="/Simple-Calculator-JavaFX/screenshots/001.git" alt= "image">
+<img src="/Simple-Calculator-JavaFX/screenshots/001.gif" alt= "image">
 </div>
 
 <br>
