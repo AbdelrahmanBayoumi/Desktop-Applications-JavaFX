@@ -1,30 +1,37 @@
-﻿# Notes Javafx
+# Notes - JavaFX
  
- 
- - Notes App is javaFX application with [HSQLDB](http://hsqldb.org/) (embedded database)
- 
+<div align="center">
+<h3>Notes App is javaFX application with <a href="http://hsqldb.org/">HSQLDB</a> (embedded database)</h3>
+<img src="https://i.imgur.com/6DRM2hi.png" alt= "image" width="60%" height="60%">
+</div>
 
-![Background](https://i.imgur.com/6DRM2hi.png)
+<br><br><br>
 
 --------------------------------------------------------
 
 ## Screenshots
 
-- Add note
+<div align="center">
+  <h2>Add note</h2>
+<img src="https://i.imgur.com/yDrp5gT.png" alt= "image" width="55%" height="55%">
+</div>
 
-![Background](https://i.imgur.com/yDrp5gT.png)
+-----
 
+<div align="center">
+  <h2>Search</h2>
+<img src="https://i.imgur.com/FwFqQo6.png" alt= "image" width="55%" height="55%">
+</div>
 
-- Search
+-----
 
-![Background](https://i.imgur.com/FwFqQo6.png)
+<div align="center">
+  <h2>About window</h2>
+<img src="https://i.imgur.com/oy8pleU.png" alt= "image" width="55%" height="55%">
+</div>
 
+<br>
 
-- About window
+-----------
 
-![Background](https://i.imgur.com/oy8pleU.png)
-
-
-
-> سبحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لا إِلهَ إِلأَ انْتَ أَسْتَغْفِرُكَ وَأَتْوبُ إِلَيْكَ.
-
+<h6 align="center">سبحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لا إِلهَ إِلأَ انْتَ أَسْتَغْفِرُكَ وَأَتْوبُ إِلَيْكَ</h6>
