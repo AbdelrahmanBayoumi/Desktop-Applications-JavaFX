@@ -5,7 +5,7 @@ The Age Calculator can determine the age or interval between two dates. The calc
 
 ## Getting Started
 
-- To run this Project use **[AgeCalcApp.java](/src/age/calculator/main/AgeCalcApp.java)**.
+- To run this Project use **[AgeCalcApp.java](/AgeCalculator-JavaFX/src/age/calculator/main/AgeCalcApp.java)**.
 
 ## Tools & Technologies
 
