@@ -1,10 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package agecalcapp;
+package age.calculator.about;
 
+import age.calculator.homepage.appController;
 import java.awt.Desktop;
 import java.io.IOException;
 import java.net.URI;
@@ -15,28 +11,11 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.AnchorPane;
 
-/**
- * FXML Controller class
- *
- * @author UpToDate
- */
 public class AboutController implements Initializable {
 
-    //=======================
-    private double xOffset = 0;
-    private double yOffset = 0;
-    //=======================
-    private AnchorPane AP;
-
-    /**
-     * Initializes the controller class.
-     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        System.out.println("AboutController : initialize ...");
-
     }
 
     @FXML

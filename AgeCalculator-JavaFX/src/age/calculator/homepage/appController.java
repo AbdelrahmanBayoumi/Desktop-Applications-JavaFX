@@ -1,20 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package agecalcapp;
+package age.calculator.homepage;
 
 import com.jfoenix.controls.JFXDatePicker;
 import com.jfoenix.controls.JFXDialog;
 import java.io.IOException;
 import java.net.URL;
-import java.time.Instant;
 import java.time.LocalDate;
-import java.time.ZoneId;
-import java.util.Date;
+import java.time.Period;
 import java.util.ResourceBundle;
-import java.util.concurrent.TimeUnit;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
@@ -34,10 +26,6 @@ import javafx.scene.layout.StackPane;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 
-/**
- *
- * @author UpToDate
- */
 public class appController implements Initializable {
 
     //=======================
@@ -71,7 +59,7 @@ public class appController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         currentDatePicker.setValue(LocalDate.now());
         try {
-            AnchorPane aboutPane = FXMLLoader.load(getClass().getResource("about.fxml"));
+            AnchorPane aboutPane = FXMLLoader.load(getClass().getResource("/age/calculator/about/about.fxml"));
             aboutDialog = new JFXDialog(AP, aboutPane, JFXDialog.DialogTransition.TOP);
         } catch (IOException ex) {
             System.out.println("error in loading about fxml");
@@ -100,7 +88,6 @@ public class appController implements Initializable {
 
     @FXML
     private void closeWindow(Event event) {
-        System.out.println("closeWindow ...");
         System.exit(0);
     }
 
@@ -108,10 +95,7 @@ public class appController implements Initializable {
         Stage s = ((Stage) (AP.getScene().getWindow()));
         Screen screen = Screen.getPrimary();
         Rectangle2D bounds = screen.getVisualBounds();
-        if (s.getWidth() == bounds.getWidth() && s.getHeight() == bounds.getHeight()) {
-            return true;
-        }
-        return false;
+        return s.getWidth() == bounds.getWidth() && s.getHeight() == bounds.getHeight();
     }
 
     @FXML
@@ -122,8 +106,8 @@ public class appController implements Initializable {
             s.setHeight(600);
             Screen screen = Screen.getPrimary();
             Rectangle2D bounds = screen.getVisualBounds();
-            s.setX(bounds.getWidth() / 2 - (200));
-            s.setY(bounds.getHeight() / 2 - (200));
+            s.setX(bounds.getWidth() / 2 - (600 / 2));
+            s.setY(bounds.getHeight() / 2 - (600 / 2));
         } else {
             Screen screen = Screen.getPrimary();
             Rectangle2D bounds = screen.getVisualBounds();
@@ -136,9 +120,7 @@ public class appController implements Initializable {
 
     @FXML
     private void AP_keyListener(KeyEvent event) {
-        System.out.println("AP keyListener ..." + event.getCode().getName());
         if (event.getCode() == KeyCode.ESCAPE) {
-            System.out.println("ESCAPE pressed ...");
             Stage s = ((Stage) (AP.getScene().getWindow()));
             if (isMaximized()) {
                 MaxWindow(event);
@@ -146,50 +128,24 @@ public class appController implements Initializable {
         }
     }
 
-    public int getDifferenceDays(Date d1, Date d2) {
-        long diff = d2.getTime() - d1.getTime();
-        return (int) TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
-    }
-
-    public Date LocalDate_TO_Date(LocalDate ld) {
-        Instant instant = ld.atStartOfDay().atZone(ZoneId.systemDefault()).toInstant();
-        Date res = Date.from(instant);
-        return res;
-    }
-
-    public LocalDate Date_TO_LocalDate(Date date) {
-        Instant instant = date.toInstant();
-        LocalDate res = instant.atZone(ZoneId.systemDefault()).toLocalDate();
-        return res;
-    }
-
     @FXML
     private void CalcAction(ActionEvent event) {
-        Date birthDate, currentDate;
-
         try {
-            birthDate = LocalDate_TO_Date(birthDatePicker.getValue());
-            currentDate = LocalDate_TO_Date(currentDatePicker.getValue());
+            LocalDate birthDate = birthDatePicker.getValue();
+            LocalDate currentDate = currentDatePicker.getValue();
+            Period period = Period.between(birthDate, currentDate);
+            if (period.getDays() < 0) {
+                showErrorAlert();
+                resetData();
+                return;
+            }
+            daysLabel.setText(String.valueOf(period.getDays()));
+            monthLabel.setText(String.valueOf(period.getMonths()));
+            yearLable.setText(String.valueOf(period.getYears()));
         } catch (Exception e) {
-            Alert a = new Alert(Alert.AlertType.ERROR);
-            a.setHeaderText("Enter Correct Date !");
-            a.showAndWait();
-            return;
+            showErrorAlert();
+            resetData();
         }
-        int days = getDifferenceDays(birthDate, currentDate);
-        if (days < 0) {
-            Alert a = new Alert(Alert.AlertType.ERROR);
-            a.setHeaderText("Enter Correct Date !");
-            a.showAndWait();
-            return;
-        }
-        int years = days / 365;
-        days -= (years * 365);
-        int months = days / 30;
-        days -= (months * 30);
-        daysLabel.setText(days + "");
-        monthLabel.setText(months + "");
-        yearLable.setText(years + "");
     }
 
     @FXML
@@ -200,4 +156,15 @@ public class appController implements Initializable {
         aboutDialog.show();
     }
 
+    private void showErrorAlert() {
+        Alert a = new Alert(Alert.AlertType.ERROR);
+        a.setHeaderText("Enter Correct Date !");
+        a.showAndWait();
+    }
+
+    private void resetData() {
+        daysLabel.setText("");
+        monthLabel.setText("");
+        yearLable.setText("");
+    }
 }

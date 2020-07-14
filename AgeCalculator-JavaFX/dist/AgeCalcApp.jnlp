@@ -9,13 +9,13 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="AgeCalcApp.jar" size="76737" download="eager" />
+    <jar href="AgeCalcApp.jar" size="78338" download="eager" />
     <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
     <jar href="lib\jfoenix-8.0.8.jar" size="2708772" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="AgeCalcApp" >
     <param name="requiredFXVersion" value="8.0+"/>
   </applet-desc>
-  <jfx:javafx-desc  width="800" height="600" main-class="agecalcapp.AgeCalcApp"  name="AgeCalcApp" />
+  <jfx:javafx-desc  width="800" height="600" main-class="age.calculator.main.AgeCalcApp"  name="AgeCalcApp" />
   <update check="always"/>
 </jnlp>

@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="240.0" prefWidth="315.0" style="-fx-background-color: #99d066;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agecalcapp.AboutController">
+<AnchorPane id="AnchorPane" prefHeight="240.0" prefWidth="315.0" style="-fx-background-color: #99d066;" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="age.calculator.about.AboutController">
    <children>
       <Pane prefHeight="5.0" prefWidth="400.0" style="-fx-background-color: #003300;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
       <Pane layoutY="395.0" prefHeight="5.0" prefWidth="400.0" style="-fx-background-color: #003300;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />

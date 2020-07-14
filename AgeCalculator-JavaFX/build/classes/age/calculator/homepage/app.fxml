@@ -18,9 +18,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<StackPane fx:id="AP" onKeyPressed="#AP_keyListener" onMouseDragged="#RootMouseDragged" onMousePressed="#RootMousePressed" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agecalcapp.appController">
+<StackPane fx:id="AP" onKeyPressed="#AP_keyListener" onMouseDragged="#RootMouseDragged" onMousePressed="#RootMousePressed" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="age.calculator.homepage.appController">
    <children>
-      <AnchorPane id="AnchorPane" onKeyPressed="#AP_keyListener" onMouseDragged="#RootMouseDragged" onMousePressed="#RootMousePressed" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #f5f5f5;" stylesheets="@style.css">
+      <AnchorPane id="AnchorPane" onKeyPressed="#AP_keyListener" onMouseDragged="#RootMouseDragged" onMousePressed="#RootMousePressed" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #f5f5f5;" stylesheets="@../style/style.css">
          <children>
             <VBox alignment="CENTER" layoutY="35.0" prefHeight="561.0" prefWidth="600.0" spacing="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="34.0">
                <children>

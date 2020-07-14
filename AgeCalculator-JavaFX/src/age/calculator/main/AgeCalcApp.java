@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package agecalcapp;
+package age.calculator.main;
 
+import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -21,18 +22,16 @@ public class AgeCalcApp extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        System.out.println("start ...");
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("app.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/age/calculator/homepage/app.fxml"));
             Scene scene = new Scene(root);
             stage.initStyle(StageStyle.UNDECORATED);
             stage.setScene(scene);
             stage.getIcons().add(new Image(getClass()
-                    .getResourceAsStream("hourglass.png")));
+                    .getResourceAsStream("/age/calculator/images/hourglass.png")));
             stage.show();
-        } catch (Exception e) {
+        } catch (IOException e) {
             System.out.println(e);
-            e.printStackTrace();
             System.exit(0);
         }
     }
