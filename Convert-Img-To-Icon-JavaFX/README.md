@@ -1,8 +1,14 @@
-# Convert image to .ico
+# Convert image to .ICO
 
-![Background](https://i.imgur.com/ChWHAi1.png)
+<div align="center">
+  <h2>It is used to convert images in JPG/PNG/GIF format into ICO</h2>
+<img src="https://i.imgur.com/ChWHAi1.png" alt= "image">
+</div>
 
-It is used to convert images in JPG/PNG/GIF format into ICO
+<br>
 
+<br>
 
-> سبحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لا إِلهَ إِلأَ انْتَ أَسْتَغْفِرُكَ وَأَتْوبُ إِلَيْكَ.
+-----------
+
+<h6 align="center">سبحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لا إِلهَ إِلأَ انْتَ أَسْتَغْفِرُكَ وَأَتْوبُ إِلَيْكَ</h6>
