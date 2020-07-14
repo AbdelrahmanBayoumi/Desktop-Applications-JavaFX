@@ -14,7 +14,7 @@ The Age Calculator can determine the age or interval between two dates. The calc
 
 ## Screenshot
 
-![Background](/screenshots/app.png)
+![Background](screenshots/app.png)
 
 
 <br><br>
