@@ -1,11 +1,19 @@
 # Simple-Calculator-in-Javafx
 
-![Background](https://i.imgur.com/elERcrh.png)
+<div align="center">
+<img src="/Simple-Calculator-JavaFX/screenshots/001.git" alt= "image">
+</div>
 
-Simple Calculator in Javafx
+<br>
+
+## Getting Started
+
+- To run this Project use **[SimlpeClac.java](/Simple-Calculator-JavaFX/SimpleCalc/src/SimpleCalcFX/SimlpeClac.java)**.
 
 
+<br>
+<br>
 
+-----------
 
-> سبحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لا إِلهَ إِلأَ انْتَ أَسْتَغْفِرُكَ وَأَتْوبُ إِلَيْكَ.
-
+<h6 align="center">سبحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لا إِلهَ إِلأَ انْتَ أَسْتَغْفِرُكَ وَأَتْوب
