@@ -9,21 +9,21 @@
 
 --------------------------------------------------------
 
-## Screenshots
+# Screenshots
 
 <div align="center">
   <h2>Add note</h2>
 <img src="https://i.imgur.com/yDrp5gT.png" alt= "image" width="55%" height="55%">
 </div>
 
------
+<br>
 
 <div align="center">
   <h2>Search</h2>
 <img src="https://i.imgur.com/FwFqQo6.png" alt= "image" width="55%" height="55%">
 </div>
 
------
+<br>
 
 <div align="center">
   <h2>About window</h2>
