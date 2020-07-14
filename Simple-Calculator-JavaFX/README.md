@@ -1,4 +1,4 @@
-# Simple-Calculator-in-Javafx
+# Simple Calculator - Javafx
 
 <div align="center">
 <img src="/Simple-Calculator-JavaFX/screenshots/001.gif" alt= "image">
