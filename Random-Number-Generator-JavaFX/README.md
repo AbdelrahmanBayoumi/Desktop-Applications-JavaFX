@@ -2,9 +2,8 @@
 
 <div align="center">
 <img src="/Random-Number-Generator-JavaFX/screenshot/001.gif" alt= "image">
-<h3> Desktop application to generate random integer numbers. </h3>
+<strong><p> Desktop application to generate random integer numbers. </p></strong>
 </div>
-
 
 ## Getting Started
 

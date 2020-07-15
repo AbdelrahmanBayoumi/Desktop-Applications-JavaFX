@@ -38,4 +38,21 @@
 <a href="/ChangeCase-JavaFX"> <img src="/readme-images/changeCase.jpg" alt="link"> </a>
 <br>
 -----------
+
+
+### Requirements
+* Java +8
+
+
+## Contributing 💡
+If you want to contribute to this project and make it better with new ideas, your pull request is very welcomed.
+If you find any issue just put it in the repository issue section, thank you.
+
+
+## Thank You!
+Please ⭐️ this repo and share it with others
+
+
+<br>
+-----------
 <h6 align="center">سبحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لا إِلهَ إِلأَ انْتَ أَسْتَغْفِرُكَ وَأَتْوبُ إِلَيْكَ</h6>
