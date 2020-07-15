@@ -1,11 +1,22 @@
-# Change Case Javafx
+# Change Text Case - Javafx
 
-![Background](https://i.imgur.com/jjWwz87.png)
-
-Change Letter Case Desktop application 
-
-
+<div align="center">
+<img src="/ChangeCase-JavaFX/screenshots/001.gif" alt= "image">
+</div>
 
 
-> سبحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لا إِلهَ إِلأَ انْتَ أَسْتَغْفِرُكَ وَأَتْوبُ إِلَيْكَ.
+## Getting Started
+
+- To run this Project use **[Main.java](/ChangeCase-JavaFX/src/changecase/Main.java)**.
+
+## Tools & Technologies
+
+- [Jfoenix 8.0.8](http://www.jfoenix.com/)
+
+
+<br>
+<br>
+
+-----------
+<h6 align="center">سبحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لا إِلهَ إِلأَ انْتَ أَسْتَغْفِرُكَ وَأَتْوبُ إِلَيْكَ</h6>
 
