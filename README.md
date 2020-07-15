@@ -1,6 +1,9 @@
-<a href="https://www.google.com.eg/"> <img src="/readme-images/title.jpg" alt="link"> </a>
+<img src="/readme-images/title.jpg" alt="link">
+
 <br>
+
 -----------
+
 #### [JavaFX](https://openjfx.io/) Open Source Projects
 <br>
 
