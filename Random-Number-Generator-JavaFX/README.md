@@ -1,7 +1,7 @@
 # Random Number Generator - JavaFX 
 
 <div align="center">
-<img src="/Random-Number-Generator/screenshots/001.git" alt= "image">
+<img src="/Random-Number-Generator-JavaFX/screenshot/001.gif" alt= "image">
 <h3> Desktop application to generate random integer numbers. </h3>
 </div>
 
