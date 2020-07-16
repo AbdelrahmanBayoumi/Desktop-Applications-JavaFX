@@ -1,6 +1,7 @@
 <img src="/readme-images/title.jpg" alt="link">
 
-<br>
+
+[![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/AbdelrahmanBayoumi/Desktop-Applications-JavaFX/master/LICENSE)
 
 -----------
 
