@@ -1,7 +1,7 @@
 # Notes - JavaFX
  
 <div align="center">
-<h3>Notes App is javaFX application with <a href="http://hsqldb.org/">HSQLDB</a> (embedded database)</h3>
+<strong><p>Notes App is javaFX application with <a href="http://hsqldb.org/">HSQLDB</a> (embedded database)</p></strong>
 <img src="https://i.imgur.com/6DRM2hi.png" alt= "image" width="60%" height="60%">
 </div>
 

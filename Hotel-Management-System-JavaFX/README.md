@@ -14,7 +14,7 @@
 3- Run the Program using [Project.java](/Hotel-Management-System-JavaFX/src/project/Project.java).
 
 
-## Screenshots
+## Demos
 
 -----
 
