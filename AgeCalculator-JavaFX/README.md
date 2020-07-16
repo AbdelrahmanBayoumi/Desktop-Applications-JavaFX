@@ -7,16 +7,30 @@ The Age Calculator can determine the age or interval between two dates. The calc
 
 - To run this Project use **[AgeCalcApp.java](/AgeCalculator-JavaFX/src/age/calculator/main/AgeCalcApp.java)**.
 
+
+## Requirements
+* Java +8
+
+
 ## Tools & Technologies
 
-- [FontawesomeFX 8.9](https://bitbucket.org/Jerady/fontawesomefx/src/master/)
-- [Jfoenix 8.0.8](http://www.jfoenix.com/)
+- [FontawesomeFX 8.9](https://bitbucket.org/Jerady/fontawesomefx/src/master/) for Icons
+- [Jfoenix 8.9](http://www.jfoenix.com/) library is an open source Java library, that implements Google Material Design using Java components .
+
 
 ## Screenshot
+<div align="center">
+<img src="screenshots/app.png">
+</div>
 
-![Background](screenshots/app.png)
+
+## Thank You!
+Please ⭐️ this repo and share it with others
 
 
-<br><br>
-> سبحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لا إِلهَ إِلأَ انْتَ أَسْتَغْفِرُكَ وَأَتْوبُ إِلَيْكَ.
+<br>
+
+----
+
+<h6 align="center">سبحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لا إِلهَ إِلأَ انْتَ أَسْتَغْفِرُكَ وَأَتْوبُ إِلَيْكَ</h6>
 
