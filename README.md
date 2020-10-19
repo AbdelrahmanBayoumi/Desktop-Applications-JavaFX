@@ -2,6 +2,7 @@
 
 
 [![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/AbdelrahmanBayoumi/Desktop-Applications-JavaFX/master/LICENSE)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FAbdelrahmanBayoumi%2FDesktop-Applications-JavaFX.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FAbdelrahmanBayoumi%2FDesktop-Applications-JavaFX?ref=badge_shield)
 
 -----------
 
@@ -59,3 +60,7 @@ Please ⭐️ this repo and share it with others
 -----------
 
 <h6 align="center">سبحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لا إِلهَ إِلأَ انْتَ أَسْتَغْفِرُكَ وَأَتْوبُ إِلَيْكَ</h6>
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FAbdelrahmanBayoumi%2FDesktop-Applications-JavaFX.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FAbdelrahmanBayoumi%2FDesktop-Applications-JavaFX?ref=badge_large)
