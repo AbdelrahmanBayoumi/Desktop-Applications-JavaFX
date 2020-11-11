@@ -3,6 +3,7 @@
 <p align="center">
      <a align="center" href="https://raw.githubusercontent.com/AbdelrahmanBayoumi/Desktop-Applications-JavaFX/master/LICENSE"><img alt="License MIT"  align="center" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
      <a align="center" href="(https://hits.seeyoufarm.com"><img alt="HITS"  align="center" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FAbdelrahmanBayoumi%2FDesktop-Applications-JavaFX&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=PAGE+VIEWS&edge_flat=false"></a>
+     <a align="center" href="https://app.fossa.com/projects/git%2Bgithub.com%2FAbdelrahmanBayoumi%2FDesktop-Applications-JavaFX?ref=badge_shield"><img alt="FOSSA Status"  align="center" src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FAbdelrahmanBayoumi%2FDesktop-Applications-JavaFX.svg?type=shield"></a>
 </p>
 
 -----------
@@ -61,3 +62,7 @@ Please ⭐️ this repo and share it with others
 -----------
 
 <h6 align="center">سبحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لا إِلهَ إِلأَ انْتَ أَسْتَغْفِرُكَ وَأَتْوبُ إِلَيْكَ</h6>
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FAbdelrahmanBayoumi%2FDesktop-Applications-JavaFX.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FAbdelrahmanBayoumi%2FDesktop-Applications-JavaFX?ref=badge_large)
