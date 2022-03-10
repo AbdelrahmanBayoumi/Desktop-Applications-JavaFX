@@ -39,7 +39,7 @@
 <br>
 <a href="https://github.com/AbdelrahmanBayoumi/StopwatchFX"> <img src="/readme-images/Stopwatch.png" alt="Stopwatch"> </a>
 <br>
-<a href="/Simple-Calculator-JavaFX"> <img src="/readme-images/SimpleCalculator.png" alt="Simple Calculator"> </a>
+<a href="https://github.com/AbdelrahmanBayoumi/CalculatorFX"> <img src="/readme-images/SimpleCalculator.png" alt="Simple Calculator"> </a>
 <br>
 <a href="https://github.com/AbdelrahmanBayoumi/RandomNumberGeneratorFX"> <img src="/readme-images/RandomNumGenerator.png" alt="RandomNumGenerator"> </a>
 <br>
