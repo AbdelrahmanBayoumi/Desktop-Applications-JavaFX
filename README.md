@@ -37,7 +37,7 @@
 <br>
 <a href="/AgeCalculator-JavaFX"> <img src="/readme-images/AgeCalculator.png" alt="AgeCalculator"> </a>
 <br>
-<a href="/StopWatch-JavaFX"> <img src="/readme-images/Stopwatch.png" alt="Stopwatch"> </a>
+<a href="https://github.com/AbdelrahmanBayoumi/StopwatchFX"> <img src="/readme-images/Stopwatch.png" alt="Stopwatch"> </a>
 <br>
 <a href="/Simple-Calculator-JavaFX"> <img src="/readme-images/SimpleCalculator.png" alt="Simple Calculator"> </a>
 <br>
