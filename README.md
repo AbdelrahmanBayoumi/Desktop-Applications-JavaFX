@@ -35,7 +35,7 @@
 <br>
 <a href="https://github.com/AbdelrahmanBayoumi/ImageToIconFX"> <img src="/readme-images/imgToICO.png" alt="Convert-Img-To-Icon"> </a>
 <br>
-<a href="/AgeCalculator-JavaFX"> <img src="/readme-images/AgeCalculator.png" alt="AgeCalculator"> </a>
+<a href="https://github.com/AbdelrahmanBayoumi/AgeCalculatorFX"> <img src="/readme-images/AgeCalculator.png" alt="AgeCalculator"> </a>
 <br>
 <a href="https://github.com/AbdelrahmanBayoumi/StopwatchFX"> <img src="/readme-images/Stopwatch.png" alt="Stopwatch"> </a>
 <br>
