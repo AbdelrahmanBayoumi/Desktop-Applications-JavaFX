@@ -1,60 +1,58 @@
-<img src="/readme-images/title.jpg" alt="link">
+<img src="/readme-images/header.png" alt="title">
 
-<p align="center">
-     <a align="center" href="https://raw.githubusercontent.com/AbdelrahmanBayoumi/Desktop-Applications-JavaFX/master/LICENSE"><img alt="License MIT"  align="center" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
-     <a align="center" href="(https://hits.seeyoufarm.com"><img alt="HITS"  align="center" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FAbdelrahmanBayoumi%2FDesktop-Applications-JavaFX&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=PAGE+VIEWS&edge_flat=false"></a>
-     <a align="center" href="https://app.fossa.com/projects/git%2Bgithub.com%2FAbdelrahmanBayoumi%2FDesktop-Applications-JavaFX?ref=badge_shield"><img alt="FOSSA Status"  align="center" src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FAbdelrahmanBayoumi%2FDesktop-Applications-JavaFX.svg?type=shield"></a> <a align="center" href="https://www.java.com"><img alt="Java 8"  align="center" src="https://img.shields.io/badge/Java-8-red.svg"></a>
-     
+
+<p align="center">  
+   <a align="center" href="https://raw.githubusercontent.com/AbdelrahmanBayoumi/Desktop-Applications-JavaFX/master/LICENSE"><img alt="License MIT"  align="center" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
+   <a align="center" href="(https://hits.seeyoufarm.com"><img alt="HITS"  align="center" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FAbdelrahmanBayoumi%2FDesktop-Applications-JavaFX&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=PAGE+VIEWS&edge_flat=false"></a>
+   <a align="center" href="https://app.fossa.com/projects/git%2Bgithub.com%2FAbdelrahmanBayoumi%2FDesktop-Applications-JavaFX?ref=badge_shield"><img alt="FOSSA Status"  align="center" src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FAbdelrahmanBayoumi%2FDesktop-Applications-JavaFX.svg?type=shield"></a> <a align="center" href="https://www.java.com"><img alt="Java 8"  align="center" src="https://img.shields.io/badge/Java-8-red.svg"></a>
 </p>
 
------------
 
-#### [JavaFX](https://openjfx.io/) Open Source Projects
 <br>
 
 > “Talk is cheap. Show me the code.” 
 > ― Linus Torvalds
 
-
 <br>
 
-<a href="/Hotel-Management-System-JavaFX"> <img src="/readme-images/hotel.jpg" alt="link"> </a>
-<br>
-------
-
-<a href="/Note-JavaFX"> <img src="/readme-images/notes.jpg" alt="link"> </a>
-<br>
------------
-<a href="/Convert-Img-To-Icon-JavaFX"> <img src="/readme-images/ImageToICO.jpg" alt="link"> </a>
-<br>
------------
-<a href="/StopWatch-JavaFX"> <img src="/readme-images/stopwatch.jpg" alt="link"> </a>
-<br>
------------
-<a href="/Simple-Calculator-JavaFX"> <img src="/readme-images/calculator.jpg" alt="link"> </a>
-<br>
------------
-<a href="/AgeCalculator-JavaFX"> <img src="/readme-images/age.jpg" alt="link"> </a>
-<br>
------------
-<a href="/Random-Number-Generator-JavaFX"> <img src="/readme-images/randomNumber.jpg" alt="link"> </a>
-<br>
------------
-<a href="/ChangeCase-JavaFX"> <img src="/readme-images/changeCase.jpg" alt="link"> </a>
-<br>
------------
+----
+<h1 align=center>🖥 Open Source Projects</h1>
 
 
-### Requirements
-* Java +8
-
+<a href="/Hotel-Management-System-JavaFX"> <img src="/readme-images/Hotel.png" alt="Hotel"> </a>
+<br>
+<a href="https://github.com/AbdelrahmanBayoumi/CPUScheduler-FX"> <img src="/readme-images/CPU-SCHEDULER.png" alt="CPU-SCHEDULER"> </a>
+<br>
+<a href="https://github.com/AbdelrahmanBayoumi/Books-Database"> <img src="/readme-images/BooksDatabase.png" alt="BooksDatabase"> </a>
+<br>
+<a href="https://github.com/AbdelrahmanBayoumi/Colors-Database"> <img src="/readme-images/ColorsDatabase.png" alt="ColorsDatabase"> </a>
+<br>
+<a href="https://github.com/AbdelrahmanBayoumi/MediaPlayerFX"> <img src="/readme-images/MediaPlayerFX.png" alt="MediaPlayerFX"> </a>
+<br>
+<a href="https://github.com/AbdelrahmanBayoumi/Tic-Tac-Toe-Game"> <img src="/readme-images/TicTacToe.png" alt="TicTacToe"> </a>
+<br>
+<a href="/Note-JavaFX"> <img src="/readme-images/Notes.png" alt="Notes"> </a>
+<br>
+<a href="/Convert-Img-To-Icon-JavaFX"> <img src="/readme-images/imgToICO.png" alt="Convert-Img-To-Icon"> </a>
+<br>
+<a href="/AgeCalculator-JavaFX"> <img src="/readme-images/AgeCalculator.png" alt="AgeCalculator"> </a>
+<br>
+<a href="/StopWatch-JavaFX"> <img src="/readme-images/Stopwatch.png" alt="Stopwatch"> </a>
+<br>
+<a href="/Simple-Calculator-JavaFX"> <img src="/readme-images/SimpleCalculator.png" alt="Simple Calculator"> </a>
+<br>
+<a href="/Random-Number-Generator-JavaFX"> <img src="/readme-images/RandomNumGenerator.png" alt="RandomNumGenerator"> </a>
+<br>
+<a href="/ChangeCase-JavaFX"> <img src="/readme-images/changeTextCase.png" alt="changeTextCase"> </a>
+<br>
 
 ## Contributing 💡
 If you want to contribute to this project and make it better with new ideas, your pull request is very welcomed.
 If you find any issue just put it in the repository issue section, thank you.
 
 
-## Thank You!
+## Star this repository 🌟
+
 Please ⭐️ this repo and share it with others
 
 
@@ -64,6 +62,3 @@ Please ⭐️ this repo and share it with others
 
 <h6 align="center">سبحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لا إِلهَ إِلأَ انْتَ أَسْتَغْفِرُكَ وَأَتْوبُ إِلَيْكَ</h6>
 
-
-## License
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FAbdelrahmanBayoumi%2FDesktop-Applications-JavaFX.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FAbdelrahmanBayoumi%2FDesktop-Applications-JavaFX?ref=badge_large)
