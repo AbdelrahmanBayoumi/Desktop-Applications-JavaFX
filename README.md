@@ -41,7 +41,7 @@
 <br>
 <a href="/Simple-Calculator-JavaFX"> <img src="/readme-images/SimpleCalculator.png" alt="Simple Calculator"> </a>
 <br>
-<a href="/Random-Number-Generator-JavaFX"> <img src="/readme-images/RandomNumGenerator.png" alt="RandomNumGenerator"> </a>
+<a href="https://github.com/AbdelrahmanBayoumi/RandomNumberGeneratorFX"> <img src="/readme-images/RandomNumGenerator.png" alt="RandomNumGenerator"> </a>
 <br>
 <a href="/ChangeCase-JavaFX"> <img src="/readme-images/changeTextCase.png" alt="changeTextCase"> </a>
 <br>
