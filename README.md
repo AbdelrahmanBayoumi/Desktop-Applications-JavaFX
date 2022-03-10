@@ -31,7 +31,7 @@
 <br>
 <a href="https://github.com/AbdelrahmanBayoumi/Tic-Tac-Toe-Game"> <img src="/readme-images/TicTacToe.png" alt="TicTacToe"> </a>
 <br>
-<a href="/Note-JavaFX"> <img src="/readme-images/Notes.png" alt="Notes"> </a>
+<a href="https://github.com/AbdelrahmanBayoumi/NotesFX"> <img src="/readme-images/Notes.png" alt="Notes"> </a>
 <br>
 <a href="/Convert-Img-To-Icon-JavaFX"> <img src="/readme-images/imgToICO.png" alt="Convert-Img-To-Icon"> </a>
 <br>
